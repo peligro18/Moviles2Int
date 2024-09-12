@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/b_menu"
+        android:layout_gravity="end"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.03"
+        android:text="Bienvenido de \nNuevo!"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:letterSpacing="0.04"
+            android:text="Buscar nuevos conocimientos"
+            android:textColor="#305f72"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/search_icon" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_card"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aprender \ncontenido nuevo"
+            android:textSize="26dp"
+            android:textColor="#305f72"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.035"/>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/card_buttton_bg"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categorias"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="35dp"/>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/button_arrow"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.02"
+        android:text="Cursos en progreso"
+        android:textColor="#305f72"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c1"
+            android:layout_width="390dp"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="#fae4f4"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/adobe_xd"/>
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adobe XD\nPrototipo"
+                android:layout_toRightOf="@id/i1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#305f72"
+                android:letterSpacing="0.03"
+                android:layout_marginLeft="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 horas, 10 minutos"
+                android:layout_toRightOf="@id/i1"
+                android:layout_below="@id/t1"
+                android:textSize="14dp"
+                android:textColor="#f18c8e"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="25dp"/>
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:layout_toRightOf="@id/t1"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#305f72"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="50dp"/>
+            
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play_button"
+                android:layout_toRightOf="@id/p1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+
+        </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/c1"
+            android:layout_width="390dp"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="#fff5e5"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/sketck_icon"/>
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sketch\nPrototipo"
+                    android:layout_toRightOf="@id/i2"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#305f72"
+                    android:letterSpacing="0.03"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 horas, 10 minutos"
+                    android:layout_toRightOf="@id/i2"
+                    android:layout_below="@id/t2"
+                    android:textSize="14dp"
+                    android:textColor="#f18c8e"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.03"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:id="@+id/p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25%"
+                    android:layout_toRightOf="@id/t2"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#305f72"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/play_button"
+                    android:layout_toRightOf="@id/p2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>
